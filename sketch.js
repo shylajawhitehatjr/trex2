@@ -78,6 +78,7 @@ function draw() {
     ground.velocityX = -(6 + 3*score/100);
   
     if(keyDown("space") && trex.y >= 159) {
+      jumpSound.play();
       trex.velocityY = -12;
     }
   
